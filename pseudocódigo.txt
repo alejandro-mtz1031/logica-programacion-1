@@ -1,0 +1,45 @@
+Inicio
+    Mostrar mensaje "Ingrese 3 números cualquiera"
+
+    Pedir al usuario número 1 → num1
+    Pedir al usuario número 2 → num2
+    Pedir al usuario número 3 → num3
+
+    Declarar variables: mayor, medio, menor
+
+    **Bloque de asignación**
+    
+    Si num1 >= num2 y num1 >= num3
+        mayor = num1
+        Si num2 < num1 y num2 >= num3
+            medio = num2
+            menor = num3
+        Sino
+            medio = num3
+            menor = num2
+    Sino si num2 >= num1 y num2 >= num3
+        mayor = num2
+        Si num1 < num2 y num1 >= num3
+            medio = num1
+            menor = num3
+        Sino
+            medio = num3
+            menor = num1
+    Sino
+        mayor = num3
+        Si num1 >= num2
+            medio = num1
+            menor = num2
+        Sino
+            medio = num2
+            menor = num1
+
+    **Bloque de comparación**
+    
+    Si num1 == num2 y num1 == num3
+        Mostrar "Todos los números son iguales"
+    Sino
+        Mostrar "De mayor a menor:", mayor, medio, menor
+        Mostrar "De menor a mayor:", menor, medio, mayor
+Fin
+
